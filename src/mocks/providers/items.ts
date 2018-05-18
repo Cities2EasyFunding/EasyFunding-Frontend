@@ -16,6 +16,46 @@ export class Items {
   constructor() {
     let items = [
       {
+        "name": "Regalo para Jose",
+        "profilePic": "assets/img/speakers/Regalo.png",
+        "about": "Vamos a hacer un regalito para nuestro amigo.",
+        "limit": "1000",
+        "actual": "50",
+        "timeLeftInSeconds": "5555555"
+      },
+      {
+        "name": "Regalo para Juan",
+        "profilePic": "assets/img/speakers/Regalo.png",
+        "about": "Vamos a hacer un regalito para nuestro amigo.",
+        "limit": "100",
+        "actual": "90",
+        "timeLeftInSeconds": "333"
+      },
+      {
+        "name": "Donación terremoto",
+        "profilePic": "assets/img/speakers/Donacion.png",
+        "about": "Donacion para ayudar a las victimas del terremoto.",
+        "limit": "2000",
+        "actual": "500",
+        "timeLeftInSeconds": "164"
+      },
+      {
+        "name": "Donación Cancer",
+        "profilePic": "assets/img/speakers/Donacion.png",
+        "about": "Donacion para ayudar a las victimas del cancer.",
+        "limit": "2000",
+        "actual": "500",
+        "timeLeftInSeconds": "200"
+      },
+      {
+        "name": "Donación de piernas",
+        "profilePic": "assets/img/speakers/Donacion.png",
+        "about": "Donacion para ayudar a las victimas de Toni para que puedan caminar.",
+        "limit": "2000",
+        "actual": "500",
+        "timeLeftInSeconds": "654"
+      },
+      /*{
         "name": "Burt Bear",
         "profilePic": "assets/img/speakers/bear.jpg",
         "about": "Burt is a Bear."
@@ -49,7 +89,7 @@ export class Items {
         "name": "Paul Puppy",
         "profilePic": "assets/img/speakers/puppy.jpg",
         "about": "Paul is a Puppy."
-      }
+      }*/
     ];
 
     for (let item of items) {

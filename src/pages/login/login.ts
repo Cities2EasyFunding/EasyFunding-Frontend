@@ -15,8 +15,8 @@ export class LoginPage {
   // If you're using the username field with or without email, make
   // sure to add it to the type
   account: { email: string, password: string } = {
-    email: 'test@example.com',
-    password: 'test'
+    email: 'pedro@gmail.com',
+    password: '12345678'
   };
 
   // Our translated text strings
@@ -35,6 +35,10 @@ export class LoginPage {
   // Attempt to login in through our User service
   doLogin() {
     this.user.login(this.account).subscribe((resp) => {
+      localStorage.setItem('token', resp.token);
+      localStorage.setItem('email', resp.user.email);
+      localStorage.setItem('username', resp.user.username);
+      localStorage.setItem('_id', resp.user._id);
       this.navCtrl.push(MainPage);
     }, (err) => {
       this.navCtrl.push(MainPage);

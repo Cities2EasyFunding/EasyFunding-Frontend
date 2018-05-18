@@ -21,7 +21,10 @@ export class ItemCreatePage {
     this.form = formBuilder.group({
       profilePic: [''],
       name: ['', Validators.required],
-      about: ['']
+      description: [''],
+      threshold: [''],
+      robustness: [''],
+      expireDate: ['']
     });
 
     // Watch the form for changes, and
@@ -78,6 +81,8 @@ export class ItemCreatePage {
    */
   done() {
     if (!this.form.valid) { return; }
+    this.form.value.timeLeftInSeconds = this.form.value.timeLeftInSeconds*24*3600;
+    this.form.value.profilePic = 'assets/img/speakers/Donacion.png';
     this.viewCtrl.dismiss(this.form.value);
   }
 }
